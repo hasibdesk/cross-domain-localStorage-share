@@ -1,8 +1,4 @@
-var sharedLocalStorage = new SharedLocalStorage([
-	'http://main.hasibdesk.com',
-	'http://flex.hasibdesk.com',
-	'http://docent.hasibdesk.com',
-]);
+var sharedLocalStorage = new SharedLocalStorage(['http://domain1.com', 'http://domain2.com', 'http://domain3.com']);
 
 var addValueClick = () => {
 	const key = document.getElementById('lsKey').value;
