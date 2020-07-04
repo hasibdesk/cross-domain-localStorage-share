@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Shared Local Storage Helper</title>
+		<script type="text/javascript">
+			const callbacks = {
+				setLocalStorageValue: (key, value) => {
+					localStorage.setItem(key, value);
+				},
+				deleteLocalStorageValue: (key) => {
+					localStorage.removeItem(key);
+				},
+			};
+
+			window.addEventListener('message', (event) => {
+				callbacks[event.data.methodName](event.data.key, event.data.value);
+			});
+		</script>
+	</head>
+	<body>
+		403
+	</body>
+</html>

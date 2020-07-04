@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>Shared Local Storage PoC</title>
+	</head>
+
+	<body>
+		<label for="lsKey">Key:</label>
+		<input type="text" name="lsKey" id="lsKey" />
+		<label for="lsVal">Value:</label>
+		<input type="text" name="lsVal" id="lsVal" />
+		<input type="button" value="Read value" onclick="readValueClick()" />
+		<input type="button" value="Add value" onclick="addValueClick()" />
+		<input type="button" value="Delete value" onclick="deleteValueClick()" />
+
+		<script src="SharedLocalStorage.js"></script>
+		<script src="handle.js"></script>
+	</body>
+</html>
